@@ -1,17 +1,21 @@
 ## Konsep identifikasi public dan private OOP di Golang
 GO menerapkan cara yang berbeda untuk hal ini. jika pernah belajar java untuk menerapkan modifier oop dalam sebuah kode java, cukup menggunakan modifier private atau public atau protected.
 secara umum ada 3 modifier dalam java :
-Modifier | Class | Package | SubClass | World
----------|-------|---------|----------|------
-public | Y | Y | Y | Y |
-Protected | Y | Y | Y | N |
-no modifier | Y | Y | N | N |
-private | Y | N | N | N | N |
+
+|Modifier | Class | Package | SubClass | World|
+|---------|-------|---------|----------|------|
+|public | Y | Y | Y | Y |
+|Protected | Y | Y | Y | N |
+|no modifier | Y | Y | N | N |
+|private | Y | N | N | N | N |
+
 
 *SubClass : class anak*
+
 *World : seluruh package di aplikasi*
 
 kembali ke GO, bagaimana dengan golang ?
+
 coba perhatikan baik-baik, ketika mulai belajar golang akan kita temui penamaan di golang menggunakan `uppercase` dan `lowercase` di huruf pertamanya dalam penamaan `type`, `variabel`, `function`.
 hal ini memberikan penjelasan bahwa huruf pertama kapital adalah sebagai `public` yang mana dapat digunakan oleh setiap kode yang akan menggunakannya. sedangkan ketika huruf pertama kecil adalah sebagai `private` dan hanya dapat di akses dalam satu `package`.
 
